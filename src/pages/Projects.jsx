@@ -1,8 +1,15 @@
-// This component acts as a container for all the ProjectCard components, displaying a grid of projects.
 import ProjectCard from "../components/ProjectCard";
 
+const Projects = ({ projects }) => {
+  const colors = {
+    primary: "#001427",
+    secondary: "#BF0603",
+    accent: "#F4D58D",
+    textDark: "#708D81",
+    textLight: "#708D81",
+    darkAccent: "#8D0801",
+  };
 
-const Projects = ({ colors, projects }) => {
   return (
     <section id="projects" className="py-16 bg-white rounded-xl shadow-lg mb-12">
       <div className="text-center mb-12">

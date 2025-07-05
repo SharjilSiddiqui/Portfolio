@@ -1,5 +1,13 @@
-// This component displays the technical skills of the portfolio owner, categorized for clarity.
-const Skills = ({ colors, skills }) => {
+const Skills = ({ skills }) => {
+  const colors = {
+    primary: "#001427",
+    secondary: "#BF0603",
+    accent: "#F4D58D",
+    textDark: "#708D81",
+    textLight: "#708D81",
+    darkAccent: "#8D0801",
+  };
+
   return (
     <section id="skills" className="py-16 bg-white rounded-xl shadow-lg mb-12">
       <div className="text-center mb-12">
@@ -12,13 +20,24 @@ const Skills = ({ colors, skills }) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 md:px-16">
         {Object.entries(skills).map(([category, skillList]) => (
-          <div key={category} className="p-6 rounded-lg shadow-md" style={{ backgroundColor: colors.accent + '20' }}> {/* Light transparency */}
-            <h3 className="text-2xl font-semibold mb-4 capitalize" style={{ color: colors.primary }}>
+          <div
+            key={category}
+            className="p-6 rounded-lg shadow-md"
+            style={{ backgroundColor: colors.accent + "33" }} // ~20% transparency
+          >
+            <h3
+              className="text-2xl font-semibold mb-4 capitalize"
+              style={{ color: colors.primary }}
+            >
               {category}
             </h3>
             <ul className="space-y-2">
               {skillList.map((skill, index) => (
-                <li key={index} className="flex items-center text-lg" style={{ color: colors.textDark }}>
+                <li
+                  key={index}
+                  className="flex items-center text-lg"
+                  style={{ color: colors.textDark }}
+                >
                   <svg
                     className="w-5 h-5 mr-2"
                     fill="none"

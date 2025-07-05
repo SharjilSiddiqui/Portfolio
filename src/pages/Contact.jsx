@@ -1,5 +1,13 @@
-// This component provides ways for visitors to contact the portfolio owner.
-const Contact = ({ colors }) => {
+const Contact = () => {
+  const colors = {
+    primary: "#001427",
+    secondary: "#BF0603",
+    accent: "#F4D58D",
+    textDark: "#708D81",
+    textLight: "#ffffff",
+    darkAccent: "#8D0801",
+  };
+
   return (
     <section id="contact" className="py-16 bg-white rounded-xl shadow-lg">
       <div className="text-center mb-12">
@@ -15,8 +23,9 @@ const Contact = ({ colors }) => {
           Feel free to reach out via email or connect with me on LinkedIn and GitHub!
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
+          {/* Email Button */}
           <a
-            href="mailto:afhaam.siddiqui@example.com" // Replace with your actual email
+            href="mailto:afhaam.siddiqui@example.com"
             className="px-6 py-3 rounded-full text-lg font-semibold shadow-md transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
             style={{ backgroundColor: colors.secondary, color: colors.textLight }}
           >
@@ -36,8 +45,10 @@ const Contact = ({ colors }) => {
             </svg>
             Email Me
           </a>
+
+          {/* LinkedIn Button */}
           <a
-            href="https://linkedin.com/in/afhaam-siddiqui" // Replace with your actual LinkedIn
+            href="https://linkedin.com/in/afhaam-siddiqui"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full text-lg font-semibold shadow-md transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
@@ -50,19 +61,15 @@ const Contact = ({ colors }) => {
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                fillRule="evenodd"
-                d="M0 0h24v24H0z"
-                fill="none"
-              ></path>
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.444-2.136 2.939v5.667H9.351V9h3.414v1.561h.045c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.073 0-1.139.923-2.063 2.063-2.063 1.14 0 2.064.924 2.064 2.063 0 1.147-.921 2.073-2.064 2.073zm1.756 13.019H3.58V9h3.513v11.452zM22.227 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.456c.98 0 1.772-.773 1.772-1.729V1.729C24 .774 23.207 0 22.227 0z"
-              ></path>
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.444-2.136 2.939v5.667H9.351V9h3.414v1.561h.045c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.073 0-1.139.923-2.063 2.063-2.063 1.14 0 2.064.924 2.064 2.063 0 1.147-.921 2.073-2.064 2.073zm1.756 13.019H3.58V9h3.513v11.452zM22.227 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.456c.98 0 1.772-.773 1.772-1.729V1.729C24 .774 23.207 0 22.227 0z"></path>
             </svg>
             LinkedIn
           </a>
+
+          {/* GitHub Button */}
           <a
-            href="https://github.com/your-github-username" // Replace with your actual GitHub
+            href="https://github.com/your-github-username"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full text-lg font-semibold shadow-md transform hover:scale-105 transition-all duration-300 flex items-center justify-center"
