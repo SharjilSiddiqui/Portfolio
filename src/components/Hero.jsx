@@ -54,7 +54,7 @@ const Hero = () => {
         <img
           src="/me.JPG"
           alt="Sharjil Siddiqui Profile"
-          className="rounded-full w-64 h-64 md:w-80 md:h-80 mx-auto object-cover shadow-2xl border-4"
+          className="rounded-full w-100 h-100 md:w-120 md:h-120 mx-auto object-cover shadow-2xl border-4"
           style={{ borderColor: colors.accent }}
         />
       </div>
